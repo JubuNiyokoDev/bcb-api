@@ -1,0 +1,598 @@
+{
+    "intents": [
+        {
+            "intent_name": "informations_service",
+            "description": "L'utilisateur demande des informations générales sur un service spécifique.",
+            "training_phrases": [
+                "C'est quoi un {service_name_fr}?",
+                "Donne-moi des détails sur la {service_name_fr}.",
+                "Explique-moi le service {service_name_fr}.",
+                "Qu'est-ce que {service_name_fr}?",
+                "Parle-moi de {service_name_fr}.",
+                "Je voudrais en savoir plus sur {service_name_fr}.",
+                "Infos sur {service_name_fr} s'il vous plaît.",
+                "Détails de {service_name_fr}.",
+                "Présente-moi {service_name_fr}.",
+                "J'aimerais connaître le service {service_name_fr}.",
+                "Donne-moi un aperçu de {service_name_fr}.",
+                "À quoi sert {service_name_fr}?",
+                "Quel est l'objectif de {service_name_fr}?",
+                "Quelles sont les fonctionnalités de {service_name_fr}?",
+                "Dites-m'en plus sur {service_name_fr}.",
+                "Infos générales sur {service_name_fr}.",
+                "Peux-tu me décrire {service_name_fr}?",
+                "Tout sur {service_name_fr}.",
+                "Une brève description de {service_name_fr}."
+            ],
+            "responses": {
+                "Compte Individuel": {
+                    "fr": "Le **Compte Individuel** est un compte bancaire pour les particuliers, vous permettant de faire des dépôts, des retraits et des transferts locaux facilement. C'est la base pour toutes vos opérations bancaires quotidiennes.",
+                    "rn": "I **Konti y'Umuntu ku Giti ciwe** ni konti ya banki y'abantu ku giti cabo, ibafasha gushiramwo, gukura no kohereza amafaranga mu gihugu. Niyo shingiro ry'ibikorwa vyawe vya banki vya buri musi.",
+                    "en": "The **Individual Account** is a bank account for individuals, allowing you to easily make deposits, withdrawals, and local transfers. It's the foundation for all your daily banking operations."
+                },
+                "Carte SESAME": {
+                    "fr": "La **Carte SESAME** est une carte de débit très pratique pour toutes vos transactions locales au Burundi. Elle vous permet d'effectuer des paiements et des retraits partout où elle est acceptée sur le réseau local.",
+                    "rn": "I **Karita SESAME** ni ikarita y'ikurikira amafaranga mu buryo bwihuse mu gihugu c'Uburundi. Irafasha kwishura no gukura amafaranga aho hose yemewe mu gihugu.",
+                    "en": "The **SESAME Card** is a convenient debit card for all your local transactions in Burundi. It allows you to make payments and withdrawals wherever it is accepted on the local network."
+                },
+                "Carte VISA": {
+                    "fr": "La **Carte VISA** est votre passeport pour les transactions internationales et les paiements en ligne. Idéale si vous voyagez ou faites des achats sur internet, elle est acceptée mondialement.",
+                    "rn": "I **Karita VISA** ni ikarita y'ikoreshwa mu mahanga no mu kwishura kuri internet. Irafasha cane cane abagenda canke abagura kuri internet, kuko yemewe kw'isi yose.",
+                    "en": "The **VISA Card** is your passport for international transactions and online payments. Ideal if you travel or shop online, it is accepted worldwide."
+                },
+                "BCB Muhira": {
+                    "fr": "Le compte **BCB Muhira** est un compte d'épargne spécialement conçu pour les femmes, offrant des avantages et des conditions spécifiques pour les aider à développer leurs projets. C'est un soutien pour l'autonomisation financière des femmes.",
+                    "rn": "I **Konti BCB Muhira** ni konti y'ukwiteza imbere yagenewe cane cane abagore, ifise inyungu n'amajambo yihariye yo kubafasha gutegura imigambi yabo. N'ugufasha abagore mu bijanye n'amafaranga.",
+                    "en": "The **BCB Muhira** account is a savings account specially designed for women, offering specific benefits and conditions to help them develop their projects. It's a support for women's financial empowerment."
+                },
+                "BOAWEB": {
+                    "fr": "**BOAWEB** est notre service bancaire en ligne. Il vous permet de gérer vos comptes à distance, consulter vos soldes, effectuer des virements et bien plus encore, sans avoir à vous déplacer en agence.",
+                    "rn": "**BOAWEB** ni serivisi yacu ya banki yo kuri internet. Irafasha gucunga konti yawe uri kure, kumenya amafaranga ufise, kohereza n'ibindi vyinshi, ata guhishira ku gice c'ibanki.",
+                    "en": "**BOAWEB** is our online banking service. It allows you to manage your accounts remotely, check your balances, make transfers, and much more, without having to visit a branch."
+                }
+            }
+        },
+        {
+            "intent_name": "documents_requis",
+            "description": "L'utilisateur demande la liste des documents nécessaires pour un service.",
+            "training_phrases": [
+                "Quels documents faut-il pour {service_name_fr}?",
+                "Les papiers nécessaires pour ouvrir {service_name_fr}.",
+                "Liste des documents pour {service_name_fr}.",
+                "De quels documents j'ai besoin pour {service_name_fr}?",
+                "Documents requis pour {service_name_fr}.",
+                "Je veux savoir les documents pour {service_name_fr}.",
+                "Quels sont les papiers à fournir pour {service_name_fr}?",
+                "Les pièces justificatives pour {service_name_fr}, s'il vous plaît.",
+                "Faut-il une preuve de domicile pour {service_name_fr}?",
+                "Avez-vous besoin de ma carte d'identité pour {service_name_fr}?",
+                "Quel formulaire remplir pour {service_name_fr}?",
+                "Les documents demandés pour {service_name_fr}.",
+                "Je dois apporter quoi pour {service_name_fr}?",
+                "Liste des prérequis documentaires pour {service_name_fr}."
+            ],
+            "responses": {
+                "Compte Individuel": {
+                    "fr": "Pour ouvrir un **Compte Individuel**, vous aurez besoin de : votre **Carte d'identité nationale ou passeport**, un **Justificatif de domicile** (facture ou attestation), et une **Photo d'identité récente**.",
+                    "rn": "Kugira ufungure **Konti y'Umuntu ku Giti ciwe**, uzokenera: **Karita ndangamuntu canke pasiporo**, **Igitangaza ko uba aho** (fagitire canke ikirangaminsi), hamwe na **Ifoto y'ikigiro iheruka gufatwa**.",
+                    "en": "To open an **Individual Account**, you will need: your **National ID card or passport**, **Proof of residence** (bill or certificate), and a **Recent passport-sized photo**."
+                },
+                "Carte SESAME": {
+                    "fr": "Pour la **Carte SESAME**, préparez votre **Carte d'identité nationale**, un **Justificatif de domicile**, et le **Formulaire de demande de carte** que vous pourrez remplir en ligne.",
+                    "rn": "Ku **Karita SESAME**, tegura **Karita ndangamuntu yawe**, **Igitangaza ko uba aho**, hamwe na **Ifishi yo gusaba ikarita** ushobora kuzuza kuri internet.",
+                    "en": "For the **SESAME Card**, please prepare your **National ID card**, **Proof of residence**, and the **Card application form** which you can fill out online."
+                },
+                "Carte VISA": {
+                    "fr": "Pour la **Carte VISA**, il vous faudra : votre **Carte d'identité nationale ou passeport**, un **Justificatif de domicile**, une **Preuve de revenus** (bulletin de paie ou attestation), et le **Formulaire de demande de carte VISA**.",
+                    "rn": "Ku **Karita VISA**, uzokenera: **Karita ndangamuntu canke pasiporo**, **Igitangaza ko uba aho**, **Ibitangaza vy'amafaranga winjiza** (amafaranga ya buri kwezi canke ikirangaminsi), hamwe na **Ifishi yo gusaba ikarita VISA**.",
+                    "en": "For the **VISA Card**, you will need: your **National ID card or passport**, **Proof of residence**, **Proof of income** (payslip or certificate), and the **VISA card application form**."
+                },
+                "BCB Muhira": {
+                    "fr": "Pour le compte **BCB Muhira**, les documents requis sont : votre **Carte d'identité nationale**, un **Justificatif de domicile**, et le **Formulaire de souscription Muhira**.",
+                    "rn": "Ku konti **BCB Muhira**, ibyangombwa bisabwa ni: **Karita ndangamuntu**, **Igitangaza ko uba aho**, hamwe na **Ifishi yo kwiyandikisha Muhira**.",
+                    "en": "For the **BCB Muhira** account, the required documents are: your **National ID card**, **Proof of residence**, and the **Muhira subscription form**."
+                },
+                "BOAWEB": {
+                    "fr": "Pour **BOAWEB**, vous aurez besoin de : votre **Carte d'identité nationale**, le **Formulaire de souscription BOAWEB**, et un **Numéro de téléphone valide**.",
+                    "rn": "Ku **BOAWEB**, uzokenera: **Karita ndangamuntu**, **Ifishi yo kwiyandikisha BOAWEB**, hamwe na **Nomero ya telefone ikora**.",
+                    "en": "For **BOAWEB**, you will need: your **National ID card**, the **BOAWEB subscription form**, and a **Valid phone number**."
+                }
+            }
+        },
+        {
+            "intent_name": "eligibilite_service",
+            "description": "L'utilisateur demande les conditions d'éligibilité pour un service.",
+            "training_phrases": [
+                "Qui peut avoir {service_name_fr}?",
+                "Quelles sont les conditions pour {service_name_fr}?",
+                "Suis-je éligible pour {service_name_fr}?",
+                "Critères d'éligibilité pour {service_name_fr}.",
+                "Qui peut bénéficier de {service_name_fr}?",
+                "Puis-je souscrire à {service_name_fr}?",
+                "Les conditions d'accès à {service_name_fr}.",
+                "Comment savoir si je peux avoir {service_name_fr}?",
+                "Est-ce que je remplis les critères pour {service_name_fr}?",
+                "Je suis une femme, puis-je ouvrir un compte Muhira?",
+                "Faut-il un certain âge pour {service_name_fr}?",
+                "Est-ce que ma résidence est un critère pour {service_name_fr}?",
+                "Quelle est l'éligibilité pour {service_name_fr}?"
+            ],
+            "responses": {
+                "Compte Individuel": {
+                    "fr": "Pour un **Compte Individuel**, il faut avoir un **âge minimum de 18 ans** et être **résident au Burundi**.",
+                    "rn": "Kuri **Konti y'Umuntu ku Giti ciwe**, ugomba kuba ufise **imyaka 18 n'uguhereye hejuru** kandi uba **mu Burundi**.",
+                    "en": "For an **Individual Account**, you must be a **minimum of 18 years old** and a **resident of Burundi**."
+                },
+                "Carte SESAME": {
+                    "fr": "Pour la **Carte SESAME**, vous devez impérativement avoir un **compte individuel ou entreprise actif à la BCB**.",
+                    "rn": "Ku **Karita SESAME**, ugomba kuba ufise **konti y'umuntu ku giti ciwe canke iy'ikigo ikora muri BCB**.",
+                    "en": "For the **SESAME Card**, you must have an **active individual or business account at BCB**."
+                },
+                "Carte VISA": {
+                    "fr": "Pour la **Carte VISA**, il est nécessaire d'avoir un **compte BCB actif** et de justifier d'un **revenu minimum requis**.",
+                    "rn": "Ku **Karita VISA**, birasabwa kugira **konti ya BCB ikora** kandi ukerekana ko ufise **amafaranga ya minimum asabwa**.",
+                    "en": "For the **VISA Card**, you need an **active BCB account** and to meet a **minimum income requirement**."
+                },
+                "BCB Muhira": {
+                    "fr": "Le compte **BCB Muhira** est **réservé aux femmes de 18 ans et plus**.",
+                    "rn": "I konti **BCB Muhira** yagenewe **gusa abagore bafise imyaka 18 canke irenga**.",
+                    "en": "The **BCB Muhira** account is **reserved for women aged 18 and above**."
+                },
+                "BOAWEB": {
+                    "fr": "Pour **BOAWEB**, il est indispensable d'avoir un **compte BCB actif**.",
+                    "rn": "Ku **BOAWEB**, birasabwa kugira **konti ya BCB ikora**.",
+                    "en": "For **BOAWEB**, an **active BCB account** is required."
+                }
+            }
+        },
+        {
+            "intent_name": "processus_ouverture_compte",
+            "description": "L'utilisateur demande comment ouvrir un compte ou souscrire à un service.",
+            "training_phrases": [
+                "Comment ouvrir un compte individuel?",
+                "Je veux une carte SESAME, comment je fais?",
+                "Quelle est la démarche pour souscrire à BOAWEB?",
+                "Expliquez le processus d'ouverture de compte.",
+                "Comment demander une carte VISA?",
+                "Je veux m'inscrire à BCB Muhira.",
+                "Étapes pour avoir un compte.",
+                "Procédure pour le service {service_name_fr}.",
+                "Comment démarrer l'ouverture de compte?",
+                "Quel est le cheminement pour obtenir une carte SESAME?",
+                "Les étapes pour devenir client BCB.",
+                "Je veux ouvrir un compte, par où commencer?",
+                "Comment puis-je souscrire à un nouveau service?",
+                "Dites-moi comment faire pour ouvrir mon compte.",
+                "Explique-moi le parcours client pour un nouveau service."
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Pour **ouvrir un compte** ou **souscrire à un service** comme la {service_name_fr}, le processus est simple et se fait en grande partie en ligne !\n\n---",
+                    "rn": "Kugira **ufungure konti** canke **ushiramwo serivisi** nka {service_name_rn}, uburyo bworoshe cane kandi bwinshi bukorwa kuri internet !\n\n---",
+                    "en": "To **open an account** or **subscribe to a service** like {service_name_en}, the process is simple and largely done online!\n\n---"
+                },
+                "steps": {
+                    "fr": [
+                        "**1. En ligne (5-10 min) :** Rendez-vous sur bcb.bi, cliquez sur 'Devenir Client' ou 'Produits et Services'. Le chatbot 'BCB EasyBot' vous guidera. Vous remplirez les formulaires en ligne, téléchargerez vos documents (carte d'identité, justificatif de domicile, etc.), et prendrez une selfie pour vérification biométrique.",
+                        "**2. Vérification IA :** Notre intelligence artificielle vérifiera vos documents. Si un problème est détecté, le chatbot vous enverra une alerte (ex: 'Veuillez soumettre une photo plus claire de votre justificatif de domicile').",
+                        "**3. Prise de rendez-vous géolocalisée :** Une fois vos documents validés, le chatbot vous proposera de choisir une agence BCB proche via une carte interactive. Un créneau optimisé vous sera attribué automatiquement pour éviter l'attente.",
+                        "**4. En agence (3-5 min) :** Vous recevrez un QR code par SMS ou e-mail. Rendez-vous à l'agence choisie avec ce QR code. L'agent accèdera à vos documents pré-vérifiés et finalisera le service (ex: activation du compte, remise de la carte)."
+                    ],
+                    "rn": [
+                        "**1. Kuri internet (iminota 5-10) :** Nka bcb.bi, pyonda kuri 'Kuba Umukiriya' canke 'Ibikorwa n'Ibisohoka'. Chatbot 'BCB EasyBot' izokuyobora. Uzokwuzuza imifishi kuri internet, ushireho inyandiko zawe (ikarita ndangamuntu, ikigumbagamwe c'aho uba, n'ibindi), kandi ufate ifoto ya selfie kugira ngo ugenzurwe n'igikoresho co kumenya abantu.",
+                        "**2. Kugenzura n'Ikirangaminsi :** Ubumenyi bwacu bwihariye buzosuzuma inyandiko zawe. Hamwe haba hari ikibazo, chatbot izokurungikira ubutumwa (urugero: 'Nyamuneka subiramwo ifoto y'ikigumbagamwe c'aho uba neza').",
+                        "**3. Kwiyandikisha ku kigo giherereye hafi :** Inyandiko zawe zimaze kwemezwa, chatbot izokwereka aho ushobora gutera mu kigo ca BCB giherereye hafi uciye kuri ikarita. Uzoronswa umwanya w'isaha utegerezwa kwemeza kugira ngo uhunze umurongo muremure.",
+                        "**4. Ku kigo (iminota 3-5) :** Uzohererwa QR code uciye kuri SMS canke e-mail. Ujye ku kigo washimye ufashe iyo QR code. Umukozi azoshobora kubona inyandiko zawe zagenzuriwe imbere hanyuma asoze igikorwa (urugero: gufungura konti, guha ikarita)."
+                    ],
+                    "en": [
+                        "**1. Online (5-10 min):** Go to bcb.bi, click on 'Become a Client' or 'Products and Services'. The 'BCB EasyBot' chatbot will guide you. You'll fill out online forms, upload your documents (ID card, proof of residence, etc.), and take a selfie for biometric verification.",
+                        "**2. AI Verification:** Our artificial intelligence will verify your documents. If an issue is detected, the chatbot will send you an alert (e.g., 'Please submit a clearer photo of your proof of residence').",
+                        "**3. Geolocation Appointment Booking:** Once your documents are validated, the chatbot will suggest choosing a nearby BCB branch via an interactive map. An optimized slot will be automatically assigned to you to avoid waiting.",
+                        "**4. At the Branch (3-5 min):** You will receive a QR code via SMS or email. Go to the chosen branch with this QR code. The agent will access your pre-verified documents and finalize the service (e.g., account activation, card issuance)."
+                    ]
+                }
+            }
+        },
+        {
+            "intent_name": "localisation_agences",
+            "description": "L'utilisateur cherche à localiser les agences ou savoir s'il y en a une proche.",
+            "training_phrases": [
+                "Où sont vos agences?",
+                "Agence BCB près de Gitega.",
+                "Avez-vous une agence à Bubanza?",
+                "Comment trouver une agence BCB?",
+                "Localisation des agences.",
+                "Montre-moi les agences sur la carte.",
+                "Y a-t-il une agence près de chez moi?",
+                "Je suis à Cibitoke, quelle agence est la plus proche?",
+                "Quelle agence devrais-je choisir pour mon rendez-vous?",
+                "Les horaires d'ouverture des agences?",
+                "Donne-moi l'adresse de l'agence de Bujumbura.",
+                "Où est la succursale la plus proche?",
+                "Comment localiser une agence BCB?"
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Oui, après avoir soumis vos documents en ligne, vous utiliserez une carte interactive pour **choisir une agence BCB proche** (ex. : basée à Gitega ou Bubanza) pour la finalisation. L'IA vous attribuera automatiquement un créneau optimisé pour éviter les files d'attente.",
+                    "rn": "Ego, amaze gushiramwo inyandiko zawe kuri internet, uzokoresha ikarita yo kumenya aho ibintu biri kugira ngo **utoranye igice ca BCB giherereye hafi** (urugero: giherereye i Gitega canke i Bubanza) kugira ngo usoze ibikorwa. Igikoresho co kumenya abantu kigire ico gitangaza gicagura umwanya mwiza kugira ngo uhunze imirongo miremire.",
+                    "en": "Yes, after submitting your documents online, you will use an interactive map to **choose a nearby BCB branch** (e.g., located in Gitega or Bubanza) for finalization. The AI will automatically assign you an optimized slot to avoid queues."
+                }
+            }
+        },
+        {
+            "intent_name": "support_general",
+            "description": "Questions générales ou salutations.",
+            "training_phrases": [
+                "Bonjour",
+                "Salut",
+                "Comment ça va?",
+                "J'ai une question.",
+                "J'ai besoin d'aide.",
+                "Que pouvez-vous faire?",
+                "Merci beaucoup.",
+                "Bonjour EasyBot.",
+                "Salut le bot.",
+                "Je voudrais de l'aide.",
+                "J'ai une requête.",
+                "Comment ça marche?",
+                "C'est quoi la BCB?",
+                "Qui êtes-vous?",
+                "Je ne comprends pas.",
+                "D'accord, merci."
+            ],
+            "responses": {
+                "greeting": {
+                    "fr": "Bonjour ! Je suis BCB EasyBot, votre assistant virtuel. Comment puis-je vous aider aujourd'hui pour votre demande de service ou d'ouverture de compte à la BCB ?",
+                    "rn": "Mwaramutse! Ndi BCB EasyBot, umufasha wanyu wo kuri murandasi. None, nokufasha gute uno musi ku bijanye n'igisabisho cawe c'igisoko canke gufungura konti muri BCB?",
+                    "en": "Hello! I'm BCB EasyBot, your virtual assistant. How can I help you today with your service request or account opening at BCB?"
+                },
+                "thanks": {
+                    "fr": "De rien ! N'hésitez pas si vous avez d'autres questions. Je suis là pour vous aider 24/7.",
+                    "rn": "Nta kintu! Ntugatinerane niba ufise ibindi bibazo. Ndi ngaha kugira ngo nkufashe isaha 24/7.",
+                    "en": "You're welcome! Feel free to ask if you have any other questions. I'm here to help you 24/7."
+                }
+            }
+        },
+        {
+            "intent_name": "probleme_document",
+            "description": "L'utilisateur a un problème avec les documents téléchargés.",
+            "training_phrases": [
+                "Mon document est refusé.",
+                "J'ai une erreur avec ma carte d'identité.",
+                "La photo n'est pas claire, que faire?",
+                "Mon justificatif de domicile n'est pas accepté.",
+                "Le système a rejeté mon document.",
+                "Pourquoi mon document n'est pas validé?",
+                "J'ai un souci avec le téléchargement de mes papiers.",
+                "Le document est flou.",
+                "Je n'arrive pas à télécharger mon passeport.",
+                "L'IA a rejeté mon document, pourquoi?",
+                "Que faire si mes documents sont incorrects?",
+                "Comment corriger un document mal soumis?"
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Si un document est manquant ou incorrect, ne vous inquiétez pas. Le système vous enverra une alerte précise, par exemple : 'Veuillez soumettre une photo plus claire de votre justificatif de domicile'. Vous pourrez alors corriger et re-télécharger le document.",
+                    "rn": "Nimba hari inyandiko itabuze canke yagiyemwo amakosa, ntihugira. Uburyo buzokurungikira ubutumwa bwemeza neza, urugero: 'Nyamuneka subiramwo ifoto y'ikigumbagamwe c'aho uba neza'. Hanyuma urashobora gukosora no gusubiriramwo inyandiko.",
+                    "en": "If a document is missing or incorrect, don't worry. The system will send you a precise alert, for example: 'Please submit a clearer photo of your proof of residence'. You can then correct and re-upload the document."
+                }
+            }
+        },
+        {
+            "intent_name": "contact_humain",
+            "description": "L'utilisateur demande à parler à un humain ou n'est pas satisfait de la réponse du bot.",
+            "training_phrases": [
+                "Je veux parler à quelqu'un.",
+                "Est-ce que je peux parler à un agent?",
+                "Besoin d'un conseiller.",
+                "Ce n'est pas ce que je cherche.",
+                "Pouvez-vous me mettre en contact avec un humain?",
+                "J'ai besoin d'une assistance directe.",
+                "Le bot ne peut pas m'aider.",
+                "Je voudrais un numéro de téléphone pour parler à quelqu'un.",
+                "Comment joindre le service client?",
+                "Je souhaite parler à un être humain."
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Je suis un assistant virtuel, mais je peux vous rediriger vers les contacts de notre service client si votre question nécessite une intervention humaine. Vous pouvez également visiter notre agence la plus proche avec votre QR code une fois la partie en ligne terminée.",
+                    "rn": "Ndi umufasha wo kuri murandasi, ariko ndashobora kukuyobora ku bantu bacu bahuza n'abakiriya niba ikibazo cawe kinosaba ko umuntu agira ico akoze. Urashobora kandi gutemberera igice cacu giherereye hafi ufise QR code yawe amaze guhagarika ibikorwa vyo kuri internet.",
+                    "en": "I am a virtual assistant, but I can redirect you to our customer service contacts if your question requires human intervention. You can also visit our nearest branch with your QR code once the online part is completed."
+                }
+            }
+        },
+        {
+            "intent_name": "consultation_compte",
+            "description": "L'utilisateur souhaite consulter le solde de son compte, l'historique des transactions, ou des informations liées à ses opérations.",
+            "training_phrases": [
+                "Comment puis-je vérifier mon solde?",
+                "Je veux voir l'historique de mes transactions.",
+                "Mon solde actuel, s'il vous plaît.",
+                "Où puis-je consulter mes mouvements?",
+                "Est-ce que je peux voir mes dernières opérations sur BOAWEB?",
+                "Comment voir ce que j'ai dépensé ce mois-ci?",
+                "Donnez-moi mes relevés de compte.",
+                "Y a-t-il eu des débits récents sur mon compte?",
+                "Vérifier le solde de mon compte.",
+                "Accéder à mon historique de compte.",
+                "Comment faire pour voir mon argent sur BOAWEB?",
+                "Montre-moi mon relevé.",
+                "Combien il me reste sur mon compte?",
+                "Voir mes dépenses.",
+                "Est-ce que mon virement est passé?",
+                "J'ai fait un dépôt, est-ce que ça apparaît?",
+                "Consulter l'état de mon compte."
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Pour consulter votre solde et l'historique de vos transactions en ligne, le plus simple est d'utiliser notre service **BOAWEB**. Vous y aurez accès à toutes les informations de votre compte en temps réel. Si vous n'avez pas encore BOAWEB, je peux vous guider pour y souscrire.",
+                    "rn": "Kugira umenye amafaranga ufise n'ibiriko birakorwa ku konti yawe kuri internet, uburyo bworoshe cane ni ugukoresha serivisi yacu ya **BOAWEB**. Uzohasanga amakuru yose ya konti yawe ako kanya. Niba utaratangura gukoresha BOAWEB, ndashobora kukuyobora uburyo bwo kuyironka.",
+                    "en": "To check your balance and transaction history online, the easiest way is to use our **BOAWEB** service. There you'll have access to all your account information in real-time. If you don't have BOAWEB yet, I can guide you on how to subscribe."
+                }
+            }
+        },
+        {
+            "intent_name": "tarifs_frais",
+            "description": "L'utilisateur demande des informations sur les frais associés aux services bancaires.",
+            "training_phrases": [
+                "Combien coûte une carte VISA?",
+                "Y a-t-il des frais pour le Compte Individuel?",
+                "Quels sont les tarifs de vos services?",
+                "Prix de la carte SESAME.",
+                "Coût d'un virement international.",
+                "Frais de gestion de compte.",
+                "Y a-t-il des commissions sur les retraits?",
+                "Quel est le coût de souscription à BOAWEB?",
+                "Tarifs des transferts locaux.",
+                "Coût de l'alerte SMS.",
+                "Frais de ma carte bancaire.",
+                "Combien coûte le service {service_name_fr}?",
+                "Y a-t-il des coûts cachés?",
+                "Les prix de vos comptes."
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Les frais et tarifs varient selon le service. Pour une information précise sur les coûts de {service_name_fr}, veuillez consulter notre grille tarifaire détaillée sur bcb.bi ou me spécifier le service qui vous intéresse.",
+                    "rn": "Ibiciro n'amafaranga bishobora gutandukana bitewe n'igisoko. Kugira umenye neza ibiciro vya {service_name_rn}, urashobora kuraba urutonde rw'ibiciro ku bcb.bi canke uganire n'igisoko gukuvuga.",
+                    "en": "Fees and charges vary by service. For precise information on the costs of {service_name_en}, please consult our detailed tariff guide on bcb.bi or specify the service you're interested in."
+                }
+            }
+        },
+        {
+            "intent_name": "probleme_technique",
+            "description": "L'utilisateur rencontre des difficultés techniques avec un service, comme un problème de connexion ou une carte bloquée.",
+            "training_phrases": [
+                "Ma carte SESAME est bloquée.",
+                "Je n'arrive pas à me connecter à BOAWEB.",
+                "Mon QR code ne fonctionne pas.",
+                "L'application mobile ne s'ouvre pas.",
+                "J'ai un problème avec ma carte VISA.",
+                "Mot de passe oublié pour BOAWEB.",
+                "Mon compte est inaccessible.",
+                "La vérification biométrique échoue.",
+                "Ma connexion à BOAWEB ne marche pas.",
+                "Impossible d'utiliser ma carte.",
+                "J'ai perdu l'accès à mon compte.",
+                "Le système est en panne?",
+                "Le site web ne répond pas.",
+                "Je ne reçois pas le SMS avec le QR code.",
+                "Que faire si ma carte est perdue ou volée?",
+                "Comment débloquer ma carte?",
+                "J'ai un bug avec mon compte."
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Je suis désolé d'apprendre que vous rencontrez un problème. Pourriez-vous me décrire plus précisément la situation avec votre {service_name_fr} ou le problème que vous avez avec **BOAWEB** ? Cela m'aidera à mieux vous orienter.",
+                    "rn": "Ndabajije ko uriko urahura n'ikibazo. Urashobora kunsigurira neza ikibazo ufise kuri {service_name_rn} canke ikibazo ufise kuri **BOAWEB**? Bizomfasha kukuyobora neza.",
+                    "en": "I'm sorry to hear you're experiencing an issue. Could you please describe the situation with your {service_name_en} or the problem you're having with **BOAWEB** more precisely? This will help me guide you better."
+                },
+                "carte_bloquee_fr": "Si votre carte est bloquée, je vous recommande de contacter notre service client directement au [Numéro de téléphone du service client] ou de vous rendre à l'agence la plus proche pour une assistance rapide.",
+                "connexion_boaweb_fr": "Si vous avez des difficultés à vous connecter à BOAWEB, vérifiez votre connexion internet et assurez-vous d'utiliser les bons identifiants. Si le problème persiste, vous pouvez demander une réinitialisation de mot de passe directement sur le portail BOAWEB."
+            }
+        },
+        {
+            "intent_name": "transferts_paiements",
+            "description": "L'utilisateur demande des informations sur les transferts d'argent (locaux, internationaux) ou les options de paiement.",
+            "training_phrases": [
+                "Comment envoyer de l'argent à l'étranger?",
+                "Puis-je faire un virement bancaire via BCB EasyBank?",
+                "Quelles sont les options pour les transferts internationaux?",
+                "Je veux payer mes factures en ligne.",
+                "Comment transférer de l'argent vers un autre compte BCB?",
+                "Paiements mobiles, c'est possible?",
+                "Coût d'un transfert local.",
+                "Comment faire un virement interne?",
+                "Puis-je payer avec ma carte SESAME dans les magasins?",
+                "Est-il possible de faire des paiements par téléphone?",
+                "Les transferts vers d'autres banques sont-ils autorisés?",
+                "Comment effectuer un paiement en ligne avec VISA?",
+                "Je veux envoyer de l'argent à ma famille à l'étranger.",
+                "Les paiements par QR code sont-ils disponibles?"
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Oui, notre plateforme **BOAWEB** vous permet d'effectuer des virements locaux et de gérer vos paiements en ligne. Pour les transferts internationaux, vous pouvez également initier la demande via notre service digital ou en agence. Avez-vous une destination spécifique en tête ?",
+                    "rn": "Ego, urubuga rwacu rwa **BOAWEB** rurakugira ngo urongereze amafaranga mu gihugu no kwishura kuri internet. Ku bijanye n'amafaranga arungitswe mu mahanga, urashobora gutangura gusaba uciye kuri serivisi yacu yo kuri murandasi canke ku gice c'ibanki. Ufise aho uriko urashira mu mutwe?",
+                    "en": "Yes, our **BOAWEB** platform allows you to make local transfers and manage your payments online. For international transfers, you can also initiate the request via our digital service or at a branch. Do you have a specific destination in mind?"
+                }
+            }
+        },
+        {
+            "intent_name": "avantages_benefices",
+            "description": "L'utilisateur souhaite connaître les avantages ou bénéfices d'un service.",
+            "training_phrases": [
+                "Quels sont les avantages du compte BCB Muhira?",
+                "Pourquoi choisir une carte VISA?",
+                "Que gagne-t-on avec BOAWEB?",
+                "Intérêts du compte épargne.",
+                "Bénéfices de la carte SESAME.",
+                "Qu'est-ce qui rend votre Compte Individuel spécial?",
+                "Pourquoi devrais-je ouvrir un compte chez vous?",
+                "Quels sont les points forts de vos services?",
+                "En quoi BOAWEB est-il meilleur?",
+                "Pourquoi le compte Muhira est bon pour les femmes?",
+                "Quels sont les retours sur investissement de l'épargne?",
+                "Avantages d'utiliser la carte VISA à l'étranger."
+            ],
+            "responses": {
+                "Compte Individuel": {
+                    "fr": "Le **Compte Individuel** à la BCB vous offre une gestion simple de vos finances, une grande flexibilité pour vos dépôts/retraits et des transferts locaux rapides, le tout avec un accès à nos services numériques.",
+                    "rn": "I **Konti y'Umuntu ku Giti ciwe** muri BCB ikuguha uburyo bworoshe bwo gucunga amafaranga yawe, ubushobozi bwinshi bwo gushiramwo canke gukura amafaranga, n'ubuhinga bwo kohereza amafaranga mu gihugu, vyose hamwe n'ubushobozi bwo gukoresha serivisi zacu zo kuri murandasi.",
+                    "en": "The **Individual Account** at BCB offers you simple financial management, great flexibility for deposits/withdrawals, and fast local transfers, all with access to our digital services."
+                },
+                "BCB Muhira": {
+                    "fr": "Le compte **BCB Muhira** est conçu pour l'autonomisation financière des femmes. Il offre des taux d'intérêt avantageux sur l'épargne, des conseils personnalisés, et peut inclure des facilités pour le financement de projets.",
+                    "rn": "I konti **BCB Muhira** yagenewe gukomeza abagore mu bijanye n'amafaranga. Iraguha inyungu nini ku bwoko bw'amafaranga uganurira, impanuro zihariye, kandi irashobora kugira uburyo bworoshe bwo gutanga ingurane ku migambi.",
+                    "en": "The **BCB Muhira** account is designed for women's financial empowerment. It offers advantageous interest rates on savings, personalized advice, and can include facilities for project financing."
+                },
+                "BOAWEB": {
+                    "fr": "**BOAWEB** vous donne le contrôle total sur vos finances 24/7, où que vous soyez. Consultez vos comptes, effectuez des virements, payez vos factures, et accédez à de nombreux services sans vous déplacer en agence. C'est la liberté et la commodité à portée de main.",
+                    "rn": "**BOAWEB** iraguha ubushobozi bwuzuye bwo gucunga amafaranga yawe isaha 24/7, aho uri hose. Urashobora kuraba konti zawe, kohereza amafaranga, kwishura fagitire, kandi ukoreshe serivisi nyinshi utagiye ku gice c'ibanki. N'ubwigenge n'ukworoha ku minwe yawe.",
+                    "en": "**BOAWEB** gives you complete control over your finances 24/7, wherever you are. Check your accounts, make transfers, pay your bills, and access many services without visiting a branch. It's freedom and convenience at your fingertips."
+                },
+                "Carte VISA": {
+                    "fr": "La **Carte VISA** vous ouvre les portes des transactions mondiales et des achats en ligne sécurisés. Elle est idéale pour voyager, faire du shopping international, et gérer vos dépenses où que vous soyez.",
+                    "rn": "I **Karita VISA** irakugururira imiryango y'ibikorwa vy'amafaranga kw'isi yose n'ukugura kuri internet bigenzuwe. Irafasha cane abagenda, abagura mu mahanga, n'abacunga ibikorwa vyabo aho bari hose.",
+                    "en": "The **VISA Card** opens the doors to global transactions and secure online purchases. It's ideal for traveling, international shopping, and managing your expenses wherever you are."
+                },
+                "Carte SESAME": {
+                    "fr": "La **Carte SESAME** simplifie vos transactions quotidiennes au Burundi. Elle est acceptée localement dans de nombreux points et vous permet des retraits faciles et rapides. C'est la solution idéale pour vos paiements au quotidien.",
+                    "rn": "I **Karita SESAME** yorosha ibikorwa vyawe vya buri musi mu Burundi. Yemewe mu bibanza vyinshi mu gihugu kandi iraguha uburyo bworoshe kandi bwihuta bwo gukura amafaranga. Niyo gisubizo ciza ku kwishura kwawe kwa buri musi.",
+                    "en": "The **SESAME Card** simplifies your daily transactions in Burundi. It is locally accepted at many points and allows for easy and fast withdrawals. It's the ideal solution for your everyday payments."
+                }
+            }
+        },
+        {
+            "intent_name": "securite",
+            "description": "L'utilisateur s'interroge sur la sécurité de ses données ou des transactions.",
+            "training_phrases": [
+                "Est-ce que mes données sont sécurisées sur votre plateforme?",
+                "La vérification biométrique est-elle fiable?",
+                "Comment protégez-vous mes informations personnelles?",
+                "Est-ce sûr d'utiliser ma carte VISA en ligne?",
+                "Que se passe-t-il si ma carte est volée?",
+                "Comment puis-je sécuriser mon compte BOAWEB?",
+                "Comment la BCB protège-t-elle ma vie privée?",
+                "Les transactions sont-elles cryptées?",
+                "Que faire en cas de fraude?",
+                "Comment puis-je signaler une activité suspecte?",
+                "Mes informations sont-elles partagées?",
+                "La biométrie est-elle obligatoire?"
+            ],
+            "responses": {
+                "default": {
+                    "fr": "La sécurité de vos données et de vos transactions est notre priorité absolue. Nous utilisons des technologies de pointe, y compris la vérification biométrique, pour garantir la protection de vos informations et la sûreté de vos opérations bancaires.",
+                    "rn": "Gukingira amakuru yawe n'amafaranga yawe niyo nyambere kuri twebwe. Dukoresha ubuhinga bugezweho, harimwo n'ugugenzura umuntu akoresheje imyaka, kugira ngo dukingire amakuru yawe n'ubutabera bw'amafaranga yawe.",
+                    "en": "The security of your data and transactions is our top priority. We use advanced technologies, including biometric verification, to ensure the protection of your information and the safety of your banking operations."
+                }
+            }
+        },
+        {
+            "intent_name": "offres_actualites",
+            "description": "L'utilisateur demande s'il y a des promotions, des nouvelles ou des offres spéciales.",
+            "training_phrases": [
+                "Avez-vous des promotions en ce moment?",
+                "Y a-t-il de nouvelles offres?",
+                "Quelles sont les actualités de la BCB?",
+                "Offre spéciale pour les nouveaux clients?",
+                "Des nouveautés pour les cartes?",
+                "Y a-t-il des taux d'intérêt spéciaux?",
+                "Des offres pour l'ouverture de compte?",
+                "Les dernières nouvelles de la banque?",
+                "Où puis-je trouver les annonces de la BCB?"
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Oui, nous proposons régulièrement de nouvelles offres et promotions pour nos clients. Pour être informé en temps réel, je vous invite à consulter la section 'Actualités' sur bcb.bi ou à vous abonner à notre newsletter.",
+                    "rn": "Ego, duhora duha abakiriya bacu ibihembo bishasha n'amatongo. Kugira ngo umenye amakuru yose ako kanya, ndagutumiye kuraba agace ka 'Amakuru' kuri bcb.bi canke kwiyandikisha kuri newsletter yacu.",
+                    "en": "Yes, we regularly offer new deals and promotions for our clients. To stay informed in real-time, I invite you to check the 'News' section on bcb.bi or subscribe to our newsletter."
+                }
+            }
+        },
+        {
+            "intent_name": "general_inquiry",
+            "description": "L'utilisateur pose une question générale non spécifique à un service, ou cherche à naviguer sur le site.",
+            "training_phrases": [
+                "Comment fonctionne ce site?",
+                "Que puis-je faire ici?",
+                "Où est la section 'Aide'?",
+                "Puis-je changer la langue?",
+                "Comment accéder à mon profil?",
+                "Je suis nouveau ici.",
+                "Comment utiliser BCB EasyBank?",
+                "Expliquez-moi le fonctionnement général.",
+                "Comment puis-je m'enregistrer?",
+                "Quelles sont les étapes pour commencer?",
+                "Je cherche des informations générales sur la banque."
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Bienvenue sur BCB EasyBank ! Je suis votre assistant virtuel pour vous guider dans l'ouverture de compte et la souscription à nos services. Vous pouvez me poser des questions sur les services comme le **Compte Individuel**, les **Cartes (SESAME, VISA)**, ou **BOAWEB**. Comment puis-je vous orienter aujourd'hui ?",
+                    "rn": "Murakaza neza kuri BCB EasyBank! Ndi umufasha wanyu wo kuri murandasi kugira ngo mbayobore mu gufungura konti no kwiyandikisha ku bisoko vyacu. Murashobora kumbuza ibibazo ku bisoko nka **Konti y'Umuntu ku Giti ciwe**, **Amarita (SESAME, VISA)**, canke **BOAWEB**. None, nokuyobora gute uno musi?",
+                    "en": "Welcome to BCB EasyBank! I'm your virtual assistant to guide you through account opening and subscribing to our services. You can ask me questions about services like the **Individual Account**, **Cards (SESAME, VISA)**, or **BOAWEB**. How can I assist you today?"
+                }
+            }
+        },
+        {
+            "intent_name": "feedback_suggestion",
+            "description": "L'utilisateur donne un feedback ou fait une suggestion.",
+            "training_phrases": [
+                "J'ai une suggestion pour améliorer votre service.",
+                "Je voudrais donner mon avis.",
+                "Votre chatbot est excellent!",
+                "J'ai un retour à faire.",
+                "C'est une bonne idée.",
+                "Je pense que vous devriez ajouter...",
+                "Ce service pourrait être amélioré."
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Merci beaucoup pour votre retour ! Vos suggestions sont très précieuses et nous aident à améliorer nos services. N'hésitez pas à détailler votre idée si vous le souhaitez.",
+                    "rn": "Murakoze cane ku bw'amakuru yanyu! Ivyipfuzo vyanyu birimwo agaciro kanini kandi biradufasha gutunganya ibikorwa vyacu. Ntugatinerane gusigura neza igitekerezo cawe niba ubishaka.",
+                    "en": "Thank you very much for your feedback! Your suggestions are very valuable and help us improve our services. Feel free to elaborate on your idea if you wish."
+                }
+            }
+        },
+        {
+            "intent_name": "branch_services",
+            "description": "L'utilisateur pose des questions spécifiques sur les services disponibles en agence.",
+            "training_phrases": [
+                "Puis-je faire un retrait important en agence?",
+                "Est-ce que je peux déposer un chèque à l'agence?",
+                "Quels services sont offerts seulement en agence?",
+                "Je veux parler à un conseiller à l'agence.",
+                "Les guichets automatiques sont-ils disponibles 24/7?",
+                "Puis-je obtenir un carnet de chèques en agence?",
+                "Services bancaires en agence."
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Nos agences vous offrent une gamme complète de services, notamment les dépôts et retraits importants, les conseils personnalisés, et la remise de documents spécifiques. N'hésitez pas à vous y rendre une fois votre processus en ligne terminé ou si votre requête l'exige.",
+                    "rn": "Amagice yacu araguha serivisi zose zikwiye, nko gushiramwo no gukura amafaranga menshi, impanuro zihariye, n'ugutanga inyandiko zihariye. Ntugatinerane kuja aho igikorwa cawe co kuri murandasi kirangiriye canke niba igisabisho cawe kinosaba.",
+                    "en": "Our branches offer a full range of services, including large deposits and withdrawals, personalized advice, and the issuance of specific documents. Feel free to visit us once your online process is complete or if your request requires it."
+                }
+            }
+        },
+        {
+            "intent_name": "loan_information",
+            "description": "L'utilisateur demande des informations sur les prêts ou crédits.",
+            "training_phrases": [
+                "Comment obtenir un prêt?",
+                "Quels sont les types de crédits que vous proposez?",
+                "Je veux faire une demande de prêt immobilier.",
+                "Informations sur les prêts étudiants.",
+                "Conditions pour un crédit à la consommation.",
+                "Taux d'intérêt des prêts.",
+                "Puis-je demander un prêt en ligne?",
+                "Aide pour le financement de mon projet."
+            ],
+            "responses": {
+                "default": {
+                    "fr": "Pour les informations concernant les prêts et crédits, notre chatbot vous donnera un aperçu général. Cependant, pour une demande personnalisée, nos experts en agence sont les mieux placés pour analyser votre situation et vous proposer les solutions adaptées. Puis-je vous aider avec le processus de prise de rendez-vous en agence ?",
+                    "rn": "Ku bijanye n'amakuru ajanye n'ingurane n'ingurane, chatbot yacu izokuguha amakuru rusange. Ariko, ku bijanye n'igisabisho c'ubumwe, abahanga bacu bo mu gice c'ibanki nibo bari mu mwanya mwiza wo gusuzuma ibikorwa vyawe no kukuguha inyishu zikwiye. None, ndashobora kukufasha kwiyandikisha ku kigo?",
+                    "en": "For information regarding loans and credits, our chatbot can give you a general overview. However, for a personalized request, our experts at the branch are best placed to analyze your situation and offer suitable solutions. Can I help you with the branch appointment booking process?"
+                }
+            }
+        }
+    ]
+}

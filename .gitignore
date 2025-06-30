@@ -7,3 +7,5 @@
 /media/
 .DS_Store
 .env
+
+./env
